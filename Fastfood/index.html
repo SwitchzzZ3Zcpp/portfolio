@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>FOOD100</title>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style/fonts.css">
+    <link rel="stylesheet" href="style/icons.css">
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="icon" href="images/product2.jpg">
+</head>
+
+<body>
+    <form>
+        <header class="header">
+            <h1 class="header__title">FOOD100</h1>
+            <p class="header__descr">FAST FOOD 100 уровня</p>
+            <div class="header__timer">
+                <span class="header__timer-extra">0</span> LVL
+            </div>
+            <!-- 
+                 ДЗ
+                 При помощи рекурсии сделать анимированный логотип. Цифры от 0 до 100. При этом когда цифра больше 50 скороть изменения становится меньше 
+            -->
+
+        </header>
+        <main class="main">
+            <!-- Бургер 1 -->
+            <section class="main__product" id="plainBurger">
+                <div class="main__product-preview">
+                    <div class="main__product-info">
+                        <img src="images/product2.jpg" alt="" class="main__product-img">
+                        <h2 class="main__product-title">Гамбургер простой
+                            <span class="main__product-many">10000 рублей</span>
+                        </h2>
+                    </div>
+                    <p class="main__product-descr">
+                        Встречайте простой ГАМБУРГЕР. Он не сочный и не сытный за то дешевый
+                    </p>
+                </div>
+                <div class="main__product-extra">
+                    <div class="main__product-number">
+
+                        <!-- Прибавка к колличесву -->
+
+                        <a class="main__product-btn fa-reg minus" data-symbol="-"></a>
+                        <!-- Кнопка минус -->
+
+                        <output class="main__product-num">0</output>
+                        <!-- Колличество -->
+
+                        <a class="main__product-btn fa-reg plus" data-symbol="+"></a>
+                        <!-- Кнопка минус -->
+
+                    </div>
+                    <div class="main__product-price"><span>0</span> рублей</div> <!-- Общая цена -->
+                </div>
+                <div class="main__product-extraProduct">
+                    <label class="main__product-label">
+                        <!-- Дополнительный товар -->
+                        <input type="checkbox" class="main__product-checkbox" data-extra="doubleMayonnaise">
+                        <span class="main__product-check"></span>
+                        Двойной майонез
+                    </label>
+                    <label class="main__product-label">
+                        <!-- Дополнительный товар -->
+                        <input type="checkbox" class="main__product-checkbox" data-extra="lettuce">
+                        <span class="main__product-check"></span>
+                        Салатный лист
+                    </label>
+                    <label class="main__product-label">
+                        <!-- Дополнительный товар -->
+                        <input type="checkbox" class="main__product-checkbox" data-extra="cheese">
+                        <span class="main__product-check"></span>
+                        Сыр
+                    </label>
+                </div>
+                <div class="main__product-kcall"><span>0</span> калорий</div> <!-- Сумма колорий -->
+
+            </section>
+            <section class="main__product" id="freshBurger">
+                <div class="main__product-preview">
+                    <div class="main__product-info">
+                        <img src="images/product1.jpg" alt="" class="main__product-img">
+                        <h2 class="main__product-title">Гамбургер FRESH <span class="main__product-many">20500
+                                рублей</span></h2>
+
+                    </div>
+                    <p class="main__product-descr">
+                        Встречайте Фрешмена FAS FOOD`а. Он набрал в себя всё самое старое.
+                    </p>
+                </div>
+                <div class="main__product-extra">
+                    <div class="main__product-number">
+
+                        <!-- Прибавка к колличесву -->
+
+                        <a class="main__product-btn fa-reg minus" data-symbol="-"></a>
+                        <!-- Кнопка минус -->
+
+                        <output class="main__product-num">0</output>
+                        <!-- Колличество -->
+
+                        <a class="main__product-btn fa-reg plus" data-symbol="+"></a>
+                        <!-- Кнопка минус -->
+
+                    </div>
+                    <div class="main__product-price"><span>0</span> рублей</div> <!-- Общая цена -->
+                </div>
+                <div class="main__product-extraProduct">
+                    <label class="main__product-label">
+                        <!-- Дополнительный товар -->
+                        <input type="checkbox" class="main__product-checkbox" data-extra="doubleMayonnaise">
+                        <span class="main__product-check"></span>
+                        Двойной майонез
+                    </label>
+                    <label class="main__product-label">
+                        <!-- Дополнительный товар -->
+                        <input type="checkbox" class="main__product-checkbox" data-extra="lettuce">
+                        <span class="main__product-check"></span>
+                        Салатный лист
+                    </label>
+                    <label class="main__product-label">
+                        <!-- Дополнительный товар -->
+                        <input type="checkbox" class="main__product-checkbox" data-extra="cheese">
+                        <span class="main__product-check"></span>
+                        Сыр
+                    </label>
+                </div>
+                <div class="main__product-kcall"><span>0</span> калорий</div> <!-- Сумма колорий -->
+
+            </section>
+            <section class="main__product" id="freshCombo">
+                <div class="main__product-preview">
+                    <div class="main__product-info">
+                        <img src="images/product3.jpg" alt="" class="main__product-img">
+                        <h2 class="main__product-title">FRESH COMBO <span class="main__product-many">31900 рубей</span>
+                        </h2>
+
+                    </div>
+                    <p class="main__product-descr">
+                        FRESH и Картошка фри. Тот же самый FRESH и Фри объяденились.
+                    </p>
+                </div>
+                <div class="main__product-extra">
+                    <div class="main__product-number">
+
+                        <!-- Прибавка к колличесву -->
+
+                        <a class="main__product-btn fa-reg minus" data-symbol="-"></a>
+                        <!-- Кнопка минус -->
+
+                        <output class="main__product-num">0</output>
+                        <!-- Колличество -->
+
+                        <a class="main__product-btn fa-reg plus" data-symbol="+"></a>
+                        <!-- Кнопка минус -->
+
+                    </div>
+                    <div class="main__product-price"><span>0</span> рублей</div> <!-- Общая цена -->
+                </div>
+                <div class="main__product-extraProduct">
+                    <label class="main__product-label">
+                        <!-- Дополнительный товар -->
+                        <input type="checkbox" class="main__product-checkbox" data-extra="doubleMayonnaise">
+                        <span class="main__product-check"></span>
+                        Двойной майонез
+                    </label>
+                    <label class="main__product-label">
+                        <!-- Дополнительный товар -->
+                        <input type="checkbox" class="main__product-checkbox" data-extra="lettuce">
+                        <span class="main__product-check"></span>
+                        Салатный лист
+                    </label>
+                    <label class="main__product-label">
+                        <!-- Дополнительный товар -->
+                        <input type="checkbox" class="main__product-checkbox" data-extra="cheese">
+                        <span class="main__product-check"></span>
+                        Сыр
+                    </label>
+                </div>
+                <div class="main__product-kcall"><span>0</span> калорий</div> <!-- Сумма колорий -->
+
+            </section>
+        </main>
+        <div class="button">
+            <!-- Кнопка заказа -->
+            <button class="addCart" type="reset">
+                <span class="fa-reg cart"></span> Заказать
+            </button>
+        </div>
+    </form>
+    <div class="receipt active">
+        <!-- Чек -->
+        <div class="receipt__window">
+            <h2 class="receipt__window-title">FOOD100 LVL</h2>
+
+            <!-- Вывод информации в чек  -->
+            <div class="receipt__window-out"></div>
+
+            <button class="receipt__window-btn">Оплатить</button> <!-- При нажатии страница обновляется -->
+        </div>
+    </div>
+
+    <div class="view">
+        <button class="view__close">
+            <span class="fa-reg close"></span>
+        </button>
+        <img src="images/product1.jpg" alt="">
+    </div>
+
+    <!-- 
+        ДЗ
+        При двойном нажатие (dblclick) на .main__product-info появляется блок блок .view при помощи добавление класса .active
+        У .main__product-info img берутся данные из атрибута src и вставляются в картинку в блоке .view при помощи функции setAttribute(название атрибута, что в него вставить)
+        И при нажатие на Х блок .view закрывается 
+    -->
+    <script src="script.js"></script>
+</body>
+
+</html>

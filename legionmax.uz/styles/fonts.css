@@ -1,0 +1,19 @@
+@font-face {
+    src: url(../fonts/Montserrat-Regular.ttf);
+    font-family: "MR";
+}
+
+@font-face {
+    src: url(../fonts/Montserrat-Bold.ttf);
+    font-family: "MB";
+}
+
+@font-face {
+    src: url(../fonts/Gilroy-Semibold.ttf);
+    font-family: "GS";
+}
+
+@font-face {
+    src: url(../fonts/RobotoSlab-VariableFont_wght.ttf);
+    font-family: "RS";
+}

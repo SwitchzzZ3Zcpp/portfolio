@@ -1,0 +1,454 @@
+@import "fonts.css";
+
+:root {
+    /*--green: #68bf3b;
+    --white: #ffffff;
+    --grey: #a6a6a6;
+    --grey_light: #bdbdbd;
+    --black: #060503;
+    --green_20: rgba(104, 205, 22, 0.2);
+    --green_gradient: linear-gradient(to top, #3d8601,  #6ad017);
+    --fontBase: "MR";
+
+
+    --col-1: calc(100% / 12);
+    --col-2: calc(100% / 12 * 2);
+    --col-3: calc(100% / 12 * 3);
+    --col-4: calc(100% / 12 * 4);
+    --col-5: calc(100% / 12 * 5);
+    --col-6: calc(100% / 12 * 6);
+    --col-7: calc(100% / 12 * 7);
+    --col-8: calc(100% / 12 * 8);
+    --col-9: calc(100% / 12 * 9);
+    --col-10: calc(100% / 12 * 10);
+    --col-11: calc(100% / 12 * 11);*/
+    --col-12: 100%;     
+}
+
+	@font-face {
+    font-family: "MRBB";
+    src: url(../fonts/Montserrat-Black.ttf);
+    font-weight: 900;
+	}
+@font-face {  
+    font-family: "MR";
+    src: url(../fonts/Montserrat-Bold.ttf);
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: "MR";
+    src: url(../fonts/Montserrat-Regular.ttf);
+    font-weight: 400;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "MR";
+    box-sizing: border-box;
+}
+
+@media (max-width: 410px) {
+ 	 .hhh1 {
+  		font-size: 40px;	
+  }  
+} 
+
+.flex-grow-1 {
+    flex-grow: 1;
+}
+
+.d-flex {
+    display: flex;
+}
+
+.company {
+    font-size: 18px;
+    text-transform: uppercase;
+    font-weight: 900;
+    margin-bottom: 16px;
+}
+
+.hhh1 {
+   font-size: 50px;
+   font-weight: 900;
+   text-transform: uppercase;
+   margin-bottom: 10px;
+   margin-top: 80px;
+   font-family: "MRBB";
+}
+
+.price {
+    font-size: 18px;
+    text-transform: uppercase;
+  	margin-bottom: 20px;
+}
+
+
+.align-items-center {
+    align-items: center;
+}
+
+.col-12 {
+    width: var(--col-12);
+    padding: 0 15px;
+}
+
+.container {
+    max-width: 1110px; 
+    width: 100%;
+    margin: auto;
+    /* outline: 1px solid red; */
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.menu {
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav {
+    padding: 7px 0;
+    box-shadow: -2px 2px 7px #fd8e0c;
+    position: relative;
+}
+
+.menu__list {
+    list-style: none;
+}
+
+.menu a {
+    text-decoration: none;
+}
+
+.menu__logo {
+    display: flex;
+    align-items: center;
+    color: #fd8e0c;
+    font-size: 16px;
+    font-family: "RS";
+}
+
+.menu__logo>img {
+    margin-right: 22px;
+}
+
+.menu__link {
+    font-size: 16px;
+    margin-left: 34px;
+    transition: 0.5s;
+    font-family: "GS";
+}
+
+.link-not-selected {
+    color: #4e4e4e;
+}
+
+.link-not-selected:hover {
+    background-color: #fff;
+}
+
+.menu__link:hover {
+    color: #fd8e0c;
+}
+
+.h-t-head {
+  	font-weight: bold;
+  	font-size: 40px;
+  	padding-left: 50px;
+  	padding-right: 50px;
+}  
+
+.size-btn-r {
+ 	font-size: 20px;
+  	margin-top: 10px;
+}  
+
+.header-img {
+    height: 400px;
+  /*	-webkit-filter: blur(1px); */
+    color: #fff;
+    background: linear-gradient(rgba(0,0,0,0.7),
+    rgba(0,0,0,0.7)),
+    url('../images/бетонная-плита-надёжный-строительны_auto_x2.jpg') no-repeat center center / cover;
+}
+
+.product {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 255px;
+    width: 100%;
+    height: 350px;
+    box-shadow: 0 0 15px #eadcd6;
+    padding: 0 21px 26px 34px;
+    text-align: center;
+}
+
+.products {
+    justify-content: space-between;
+    margin-top: 50px;
+    margin-bottom: 101px;
+}
+
+.product__img {
+    height: 144px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.product__title {
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+    font-size: 18px;
+    font-family: "MB";
+    color: #dd4400;
+    max-width: 167px;
+    width: 100%;
+    line-height: 27px;
+}
+
+.product__img::before {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 1px;
+    background: linear-gradient(to right, #fff, #dd4400, #fff);
+}
+
+.product__img::after {
+    content: '';
+}
+
+.content {
+    justify-content: space-between;
+    margin-bottom: 100px;
+}
+
+.content__info {
+    max-width: 730px;
+    width: 100%;
+}
+
+.sidebar {
+    max-width: 255px;
+    width: 100%;
+}
+
+.content__title,
+.sidebar__title {
+    color: #5e5e5e;
+    font-size: 30px;
+    font-family: "MB";
+    margin-bottom: 52px;
+}
+
+.content__text {
+    color: #5e5e5e;
+    font-size: 18px;
+    line-height: 27px;
+    margin-bottom: 27px;
+}
+
+.content__text:last-of-type {
+    margin-bottom: 46px;
+}
+
+
+/* footer {
+    background: #dd4400;
+    padding-top: 67px;
+    padding-bottom: 66px;
+}
+
+.footer, .footer a {
+    justify-content: space-between;
+    color: #fff;
+    text-decoration: none;
+}
+
+.footer__left h3 {
+    font-size: 30px;
+    font-weight: 400;
+    margin-bottom: 15px;
+}
+
+.footer__left p {
+    font-size: 18px;
+}
+
+.footer__left a {
+    font-size: 45px;
+    margin-bottom: 4px;
+    display: block;
+}
+
+.footer__right {
+    text-align: right;
+}
+
+.footer__right h3 {
+    font-size: 30px;
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+
+.footer__right p, .footer__right a {
+    font-size: 20px;
+}
+
+.footer__right p {
+    margin-bottom: 20px;
+}
+
+
+@media(max-width: 1080px) {
+    .product {
+        max-width: 40%;
+        margin-bottom: 20px;
+    }
+
+    .products {
+        justify-content: space-evenly;
+    }
+}
+
+@media(max-width: 1015px) {
+    .content__info {
+        max-width: 100%;
+        padding: 0 15px;
+    }
+    .sidebar {
+        max-width: 100%;
+        text-align: center;
+        margin-top: 40px;
+    }
+    .sidebar__news {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+    .news {
+        flex-direction: column;
+        max-width: 200px;
+        width: 100%;
+        align-items: center;
+        margin-bottom: 30px;
+    }
+
+    .news__img {
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+}
+
+@media(max-width: 855px) {
+    .footer {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    .footer__right {
+        text-align: center;
+        order: -1;
+        margin-bottom: 20px;
+    }
+
+    .footer__left h3 {
+        font-size: 25px;
+    }
+    .footer__left a {
+        font-size: 35px;
+    }
+}
+*/
+
+/* .topnav {
+    overflow: hidden;
+    background-color: #333;
+    position: relative;
+}
+
+
+/* Hide the links inside the navigation menu (except for logo/home) */
+
+.topnav #myLinks {
+    display: none;
+}
+
+
+/* Style navigation menu links */
+
+.topnav a {
+    color: white;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    display: block;
+}
+
+
+/* Style the hamburger menu */
+
+.topnav a.icon {
+    background: black;
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+} */
+
+i.fa-bars {
+    font-size: 55px;
+}
+
+
+/* Add a grey background color on mouse-over */
+
+/* .topnav a:hover {
+    color: black;
+    background-color: #fd8e0c;
+} */
+
+
+/* Style the active link (or home/logo) */
+
+.active {
+    color: white;
+    background-color: #fff;
+}
+
+.topnav {
+    box-shadow: -2px 2px 7px #fd8e0c;
+}
+
+
+/*////////////////////////////////////////////////////////////////////////////*/
+
+@media(max-width: 760px) {
+    .menu {
+        flex-direction: column;
+    }
+    .menu__list {
+        margin: 20px 0;
+        justify-content: center;
+    }
+    .menu__link {
+        margin: 10px 17px;
+        display: block;
+    }
+    .header-img {
+        height: 300px;
+    }
+}
+
+

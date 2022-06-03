@@ -1,0 +1,22 @@
+@font-face {
+    font-family: "MM";
+    src: url(../fonts/Montserrat-Medium.ttf);
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: "MT";
+    src: url(../fonts/Montserrat-Thin.ttf);
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: "NS";
+    src: url(../fonts/NunitoSans-Regular.ttf);
+}
+
+@font-face {
+    font-family: "WS";
+    src: url(../fonts/WorkSans-Regular.ttf);
+}
+
